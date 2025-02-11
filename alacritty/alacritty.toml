@@ -1,0 +1,10 @@
+general.import = [
+	"~/.config/alacritty/onedark.toml"
+]
+
+[font]
+size = 13.0
+
+[font.normal]
+family = "MonaspiceNe Nerd Font"
+style = "Regular"
