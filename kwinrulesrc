@@ -1,0 +1,10 @@
+[General]
+count=1
+rules=cf795bdb-5b6c-425e-afd0-701110d9c32d
+
+[cf795bdb-5b6c-425e-afd0-701110d9c32d]
+Description=Settings for vesktop
+desktops=eadb5fdc-212b-4dc5-88e8-6232d101976d
+desktopsrule=3
+wmclass=vesktop
+wmclassmatch=1
