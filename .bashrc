@@ -26,8 +26,6 @@ lazyg() {
 alias ..='cd ..'
 alias ...='cd ../..'
 
-eval "$(zoxide init bash)"
-
 PS1='\[\e[91;1m\][\[\e[93m\]\u\[\e[92m\]@\[\e[94m\]\h\[\e[39m\] \[\e[95m\]\w\[\e[91m\]]\\$\[\e[0m\] '
 
 # fnm
@@ -36,3 +34,7 @@ if [ -d "$FNM_PATH" ]; then
   export PATH="$FNM_PATH:$PATH"
   eval "`fnm env`"
 fi
+
+eval -- "$(/usr/bin/starship init bash --print-full-init)"
+
+eval "$(zoxide init bash)"

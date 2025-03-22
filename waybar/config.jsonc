@@ -1,0 +1,55 @@
+      {
+        "layer": "top",
+        "position": "top",
+        "height": 35,
+        "margin-top": 8,
+        "margin-left": 7,
+        "margin-right": 7,
+        "modules-left": ["custom/rofi","hyprland/workspaces"],
+        "modules-center": ["clock"],
+        "modules-right": [
+          "battery",
+          "pulseaudio",
+          /*
+          "clock"
+          */
+          "tray"
+        ],
+        "custom/rofi": {
+          "format": " ",
+          "on-click": "wofi --show drun --allow-images"
+        },
+        "hyprland/workspaces": {
+          "persistent-workspaces": {
+            "*": 6
+          },
+          "on-click": "activate",
+          "format": "{icon}",
+          "all-outputs": "false",
+          "on-scroll-up": "hyprctl dispatch workspace e+1",
+          "on-scroll-down": "hyprctl dispatch workspace e-1",
+          "format-icons": {
+            "urgent": "",
+            "default": ""
+          }
+        },
+        "battery": {
+          "format": "󰁹  {capacity}%",
+          "format-charging": "󰂄  {capacity}%"
+        },
+        "pulseaudio": {
+          "format": "󰕾 {volume}%",
+          "format-muted": "󰝟  {volume}%",
+          "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+          "on-click-right": "pavucontrol",
+          "scroll-step": 2
+        },
+        "clock": {
+          "format-alt": "{:%a; %d. %b  %H:%M}"
+        },
+        "tray": {
+          "icon-size": 20,
+          "spacing": 2
+        }
+      }
+

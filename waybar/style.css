@@ -1,0 +1,85 @@
+  @define-color base00 #282c34;
+  @define-color base01 #353b45;
+  @define-color base04 #565c64;
+  @define-color base05 #abb2bf;
+  @define-color base06 #b6bdca;
+
+* {
+             border: none;
+             font-family: Ubuntu Nerd Font Medium;
+             font-size: 16px;
+         }
+
+         window#waybar {
+             background: @base00;
+             border-radius: 8px;
+         }
+
+         #custom-rofi {
+             color: @base05;
+             background: @base01;
+             margin: 4px;
+             padding-left: 8px;
+             padding-right: 8px;
+             border-radius: 8px;
+             font-size: 17px;
+         }
+
+         #workspaces {
+             background: @base01;
+             margin: 4px;
+             padding-left: 4px;
+             padding-right: 8px;
+             border-radius: 8px;
+         }
+
+         #workspaces button {
+             background: transparent;
+             color: @base05;
+             padding: 0 2px;
+         }
+
+         #workspaces button.active {
+             background: transparent;
+             color: @base06;
+         }
+
+         #workspaces button.empty {
+             color: @base04;
+         }
+
+         #battery {
+             color: @base05;
+             background: @base01;
+             margin: 4px;
+             padding-left: 10px;
+             padding-right: 8px;
+             border-radius: 8px;
+         }
+
+         #pulseaudio {
+             color: @base06;
+             background: @base01;
+             margin: 4px;
+             padding-left: 8px;
+             padding-right: 8px;
+             border-radius: 8px;
+         }
+
+         #clock {
+             color: @base06;
+             background: @base01;
+             margin: 4px;
+             padding-left: 8px;
+             padding-right: 8px;
+             border-radius: 8px;
+         }
+
+         #tray {
+             color: @base06;
+      background: @base01;
+      margin: 4px;
+      padding-left: 8px;
+      padding-right: 8px;
+      border-radius: 8px;
+         }
